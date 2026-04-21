@@ -17,7 +17,7 @@ def calculate_totals(df):
     max_venda = df["total"].max()
 
     idx = df["total"].idxmax()
-    print(f"{df.loc[idx,"produto"]} foi o produto que mais vendeu, com R${max_venda:.2f} em vendas!")
+    print(f"{df.loc[idx,'produto']} foi o produto que mais vendeu, com R${max_venda:.2f} em vendas!")
     print()
 
     return df
